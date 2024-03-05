@@ -1,0 +1,15 @@
+
+.containerMenu {
+  width: 100%;
+  display: flex;
+
+}
+.listMenu{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.itemMenu {
+  list-style: none;
+}
+

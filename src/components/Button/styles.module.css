@@ -1,0 +1,21 @@
+
+.container {
+  background-color: red;
+  padding: 8px 15px;
+  border-radius: 8px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  text-align: left;
+  width: 130px;
+}
+.container:hover {
+  background-color: blue;
+}
+.text {
+  margin: 0px;
+}
+.containerIcon {
+  
+}

@@ -1,0 +1,16 @@
+#root {
+
+}
+
+body {
+  margin: 0px;
+}
+
+.firstSection {
+  display: flex;
+}
+.containerHeaderHero {
+  width: 70%;
+  padding: 0 50px;
+  height: 100vh;
+}
