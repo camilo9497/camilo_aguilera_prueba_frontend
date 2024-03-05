@@ -1,0 +1,20 @@
+.container {
+  background-color: var(--blue);
+  padding: 35px 80px;
+}
+.containerSecond {
+  display: flex;
+  justify-content: space-between;
+}
+.text {
+  font-size: 0.8em;
+  line-height: 1.2em;
+  margin-top: 25px;
+  text-align: center;
+}
+.textLink {
+  display: inline-block;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 800;
+}
