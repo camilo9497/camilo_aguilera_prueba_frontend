@@ -1,13 +1,21 @@
 #root {
+  --blue: #0c1726;
+  --secondaryBlue: #3c5973;
+  --white: #ffffff;
+  --golden: #8C8377;
 
 }
 
 body {
   margin: 0px;
+  color: var(--white);
+  background-color: var(--white);
+
 }
 
 .firstSection {
   display: flex;
+  background-color: var(--blue);
 }
 .containerHeaderHero {
   width: 70%;
