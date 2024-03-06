@@ -1,6 +1,6 @@
 
 .container {
-  background-color: red;
+  background-color: var(--secondaryBlue);
   padding: 8px 15px;
   border-radius: 8px ;
   display: flex;
@@ -11,11 +11,11 @@
   width: 130px;
 }
 .container:hover {
-  background-color: blue;
+  background-color: var(--golden);
 }
 .text {
   margin: 0px;
 }
 .containerIcon {
-  
+
 }
