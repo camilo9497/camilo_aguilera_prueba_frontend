@@ -1,20 +1,11 @@
 .container {
-  background-color: var(--blue);
+  background-color: var(--gray);
+  min-height: 300px;
   padding: 35px 80px;
 }
-.containerSecond {
-  display: flex;
-  justify-content: space-between;
-}
-.text {
-  font-size: 0.8em;
-  line-height: 1.2em;
-  margin-top: 25px;
-  text-align: center;
-}
-.textLink {
-  display: inline-block;
-  text-decoration: underline;
-  cursor: pointer;
-  font-weight: 800;
+
+.containerRadio {
+  background-color: var(--blue);
+  padding: 30px 20px;
+  border-radius: 5px;
 }
