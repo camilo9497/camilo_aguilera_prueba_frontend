@@ -1,5 +1,4 @@
 
-import Checkbox from '../Checkbox';
 import Form from '../Form';
 import ItemRadio from '../ItemRadio';
 import Select from '../Select';
