@@ -1,6 +1,7 @@
 
 import './App.css'
 import AnimationSection from './components/AnimationSection'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import SecondSection from './components/SecondSection'
@@ -16,12 +17,14 @@ function App() {
         <Header />
         <Hero />
       </div>
-      <AnimationSection />    
+      <div className='containerAnimationSection'>
+        <AnimationSection />    
+      </div>
     </div>
 
      <SecondSection />
      <ThirdSection />
-     {/* <Footer /> */}
+     <Footer />
     </>
   )
 }
