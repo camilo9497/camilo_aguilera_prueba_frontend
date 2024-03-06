@@ -8,3 +8,15 @@
   line-height: 1.1em;
 
 }
+
+@media screen and (max-width: 778px){
+  .title {
+    text-align: center;
+  }
+  .description {
+    text-align: center;
+  }
+  .container{
+    margin-bottom: 20px;
+  }
+}
