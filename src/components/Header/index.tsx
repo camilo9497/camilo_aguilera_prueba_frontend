@@ -1,6 +1,39 @@
+import ItemSubmenu from '../ItemSubmenu';
 import styles from './styles.module.css'
 
 const Header = () => {
+
+  const subMenuItems = [
+    {
+      id:1,
+      text: 'Page 1',
+      subMenu:[]
+    },
+    {
+      id:1,
+      text: 'Page 2',
+      subMenu:[]
+    },
+    {
+      id:1,
+      text: 'Page 3',
+      subMenu:[
+        {
+          id:1,
+          text:'Item 1'
+        },
+        {
+          id:2,
+          text:'Item 2'
+        },
+        {
+          id:3,
+          text:'Item 3'
+        },
+      ] 
+    },
+  ]
+
   return (
     <nav className={styles.containerMenu}>
       <ul className={styles.listMenu}>
@@ -10,9 +43,9 @@ const Header = () => {
         <li className={styles.itemMenu}>
           <p className={styles.textItemMenu}>Pages</p>
           <div className={styles.modalItemMenu}>
-            <p>Page 1</p>
-            <p>Page 2</p>
-            <p>Page 3</p>
+            {subMenuItems.map((item)=> {
+              return <ItemSubmenu key={item.id} text={item.text} subMenu={item.subMenu} />
+            })}
           </div>
         </li>
         <li className={styles.itemMenu}>

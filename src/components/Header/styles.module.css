@@ -27,7 +27,6 @@
 .modalItemMenu {
   display: none;
   position: absolute;
-  bottom: -80px;
   background-color: var(--secondaryBlue);
   padding: 10px;
   width: 120px;
