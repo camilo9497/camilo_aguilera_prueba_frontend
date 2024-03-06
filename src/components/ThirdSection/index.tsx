@@ -1,16 +1,17 @@
 
-import ItemFooter from '../ItemFooter';
+import Form from '../Form';
+import ItemRadio from '../ItemRadio';
 import styles from './styles.module.css'
 
 const ThirdSection = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.containerSecond}>
-        <ItemFooter title='Lorem ipsum dolor amet' description='Quisque sagittis hendrerit justo, eu aliquam risus posuere sed' />
-        <ItemFooter title='Lorem ipsum dolor amet' description='Quisque sagittis hendrerit justo, eu aliquam risus posuere sed' />
-        <ItemFooter title='Lorem ipsum dolor amet' description='Quisque sagittis hendrerit justo, eu aliquam risus posuere sed' />
+      <div className={styles.containerRadio}>
+        <ItemRadio id='option1' name='option' value='option1' label='Option 1' />
+        <ItemRadio id='option2' name='option' value='option2' label='Option 2' />
+        <ItemRadio id='option3' name='option' value='option3' label='Option 3' />
       </div>
-      <p className={styles.text}>Lorem ipsum dolor sit ame <p onClick={()=>console.log('footer link')} className={styles.textLink}>facere facilisxxx</p>  eaque aliquid ut molestias libero iste corrupti sapiente incidunt obcaecati?</p>
+      <Form />
     </div>
   )
 }
