@@ -11,5 +11,26 @@
 }
 .itemMenu {
   list-style: none;
+  font-weight: 300;
+  position: relative;
+  padding: 20px;
+}
+.itemMenu:hover .modalItemMenu{
+  display: initial;
+
+}
+.textItemMenu:hover {
+  font-weight: 500;
 }
 
+.modalItemMenu {
+  display: none;
+  position: absolute;
+  bottom: -80px;
+  background-color: var(--secondaryBlue);
+  padding: 10px;
+  width: 120px;
+  left: 0px;
+  right: 0px;
+  border-radius: 5px;
+}

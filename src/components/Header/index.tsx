@@ -5,16 +5,21 @@ const Header = () => {
     <nav className={styles.containerMenu}>
       <ul className={styles.listMenu}>
         <li className={styles.itemMenu}>
-          <p>Home</p>
+          <p className={styles.textItemMenu}>Home</p>
         </li>
         <li className={styles.itemMenu}>
-          <p>Pages</p>
+          <p className={styles.textItemMenu}>Pages</p>
+          <div className={styles.modalItemMenu}>
+            <p>Page 1</p>
+            <p>Page 2</p>
+            <p>Page 3</p>
+          </div>
         </li>
         <li className={styles.itemMenu}>
-          <p>About</p>
+          <p className={styles.textItemMenu}>About</p>
         </li>
         <li className={styles.itemMenu}>
-          <p>Contact</p>
+          <p className={styles.textItemMenu}>Contact</p>
         </li>
       </ul>
     </nav>
