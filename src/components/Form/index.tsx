@@ -36,7 +36,9 @@ const Form = () => {
         <input type='email' name='email' value={formData.email} onChange={handleChangeInput} />
       </div>
       <textarea disabled value={result}>texto</textarea>
-      <Button text='Submit' onPress={handleButtonClick} />
+      <div className={styles.containerButton}>
+        <Button text='Submit' onPress={handleButtonClick} />
+      </div>
     </form>
   )
 }
