@@ -2,16 +2,16 @@
 
 import { useState } from 'react';
 import styles from './styles.module.css'
+import { TypeItemSubmenu } from '../../types';
 
 interface Props {
-  text: string,
-  subMenu?: any
+  text: string
+  subMenu: TypeItemSubmenu[]
 }
 
 const ItemSubmenu: React.FC<Props> = ({text, subMenu}) => {
   const [showSubMenu, setShowSubMenu] = useState(false)
-  const hasSubmenu = subMenu.length > 0;
-  console.log("🚀 ~ hasSubmenu:", hasSubmenu)
+  const hasSubmenu = subMenu?.length > 0;
   return (
     <div onClick={()=>setShowSubMenu(!showSubMenu)} className={styles.container}>
      <div className={styles.secondaryContainer}>
@@ -24,8 +24,8 @@ const ItemSubmenu: React.FC<Props> = ({text, subMenu}) => {
      </div>
       {showSubMenu && (
         <div className={styles.containerSubItems}>
-          {subMenu.map((item)=> {
-            return <p className={styles.itemSubmenu}>{item.text}</p>
+          {subMenu?.map((item)=> {
+            return <p key={item.id} className={styles.itemSubmenu}>{item.text}</p>
           })}
         </div>
       )}
