@@ -1,5 +1,7 @@
 
-
+.container {
+  margin: 13px 0px;
+}
 .input {
   display: none;
 }
@@ -40,4 +42,11 @@ label {
 
 .input:checked + label .radioButton {
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1024px) {
+	.radioButton {
+		margin-right: 20px;
+
+	}
 }
