@@ -7,8 +7,9 @@ interface Props {
 }
 
 const Button: React.FC<Props> = ({text, icon = false, onPress}) => {
+  const conditionalClass = icon ? styles.containerT : styles.containerF;
   return (
-    <div className={styles.container} onClick={()=>onPress()}  >
+    <div className={`${styles.container} ${conditionalClass}`} onClick={()=>onPress()}  >
       <p className={`${styles.text}`}>{text}</p>
       {icon && <div className={styles.containerIcon}>X</div>}
     </div>
